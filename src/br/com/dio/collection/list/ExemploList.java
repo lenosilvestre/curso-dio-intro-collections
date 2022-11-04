@@ -12,12 +12,13 @@ class ExemploList {
 //      List<Double> notas = new ArrayList<>(Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6));
         /*List<Double> notas = Arrays.asList(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6);
         notas.add(10d);
-        System.out.println(notas);*/
+        System.out.println(notas);
+        */
         /*List<Double> notas = List.of(7d, 8.5, 9.3, 5d, 7d, 0d, 3.6);
         notas.add(1d);
         notas.remove(5d);
-        System.out.println(notas);*/
-
+        System.out.println(notas);
+*/
         System.out.println("Crie uma lista e adicione as sete notas: ");
 
         List<Double> notas = new ArrayList<Double>(); //Generics(jdk 5) - Diamond Operator(jdk 7)
@@ -55,7 +56,7 @@ class ExemploList {
         Iterator<Double> iterator = notas.iterator();
         Double soma = 0d;
         while(iterator.hasNext()){
-            Double next = iterator.next();
+           Double next = iterator.next();
             soma += next;
         }
         System.out.println("Exiba a soma dos valores: " + soma);
@@ -78,22 +79,29 @@ class ExemploList {
         }
         System.out.println(notas);
 
-        /*System.out.println("Apague toda a lista");
+     /*   System.out.println("Apague toda a lista");
         notas.clear();
-        System.out.println(notas);
-        */
+        System.out.println(notas);*/
         System.out.println("Confira se a lista está vazia: " + notas.isEmpty());
 
 /*
 Para você: Resolva esses exercícios utilizando os métodos da implementação LinkedList:
-
+*/
         System.out.println("Crie uma lista chamada notas2 " +
                 "e coloque todos os elementos da list Arraylist nessa nova lista: ");
 
-        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: ");
+  /*
 
-        System.out.println("Mostre a primeira nota da nova lista removendo-o: ");
+
 */
+        LinkedList <Double> notas2 = new LinkedList<>(notas);
 
+        System.out.println("LinkedList : "+notas2);
+        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: " +notas2.get(0));
+
+        System.out.println("Mostre a primeira nota da nova lista removendo-o: "+notas2.remove(0));
+        notas2.add(0,2.0);
+        System.out.println("LinkedList : "+ notas2);
+        System.out.println("LinkedList : "+notas2);
     }
 }
