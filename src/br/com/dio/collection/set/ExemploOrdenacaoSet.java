@@ -34,6 +34,7 @@ public class ExemploOrdenacaoSet {
 
         System.out.println("--\tOrdem natural (TempoEpisodio)\t--");
         Set<Serie> minhasSeries2 = new TreeSet<>(minhasSeries1);
+
         for (Serie serie: minhasSeries2) System.out.println(serie.getNome() + " - "
                 + serie.getGenero() + " - " + serie.getTempoEpisodio());
 

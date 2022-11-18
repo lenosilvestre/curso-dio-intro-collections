@@ -3,7 +3,13 @@ package br.com.dio.collection.map;
 import java.util.*;
 
 public class ExemploMap {
+
     public static void main(String[] args) {
+
+
+
+
+
 /*
  Dada os modelos dos carros e seus respectivos consumos na estrada, faça:
  modelo = gol - consumo = 14,4km/l
@@ -63,6 +69,7 @@ public class ExemploMap {
 
         Double consumoMenosEficiente = Collections.min(carrosPopulares.values());
         String modeloMenosEficiente = "";
+
         for (Map.Entry<String, Double> entry: carrosPopulares.entrySet()) {
             if(entry.getValue().equals(consumoMenosEficiente)) {
                 modeloMenosEficiente = entry.getKey();
@@ -80,7 +87,9 @@ public class ExemploMap {
         System.out.println("Exiba a média dos consumos deste dicionário de carros: " + (soma/carrosPopulares.size()));
 
         System.out.println(carrosPopulares);
+
         System.out.println("Remova os modelos com o consumo igual a 15,6 km/l: ");
+
         Iterator<Double> iterator1 = carrosPopulares.values().iterator();
         while(iterator1.hasNext()){
             if(iterator1.next().equals(15.6)) iterator1.remove();

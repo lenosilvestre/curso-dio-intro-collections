@@ -35,7 +35,7 @@ public class ExemploSet {
         System.out.println("Exiba a maior nota: " + Collections.max(notas));
 
         Iterator<Double> iterator = notas.iterator();
-        Double soma = 0.0;
+        var soma = 0.0;
         while(iterator.hasNext()) {
             Double next = iterator.next();
             soma += next;

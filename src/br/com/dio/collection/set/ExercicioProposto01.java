@@ -41,6 +41,7 @@ public class ExercicioProposto01 {
         Set<String> coresArcoIris3 = new LinkedHashSet<>(
                 Arrays.asList("violeta", "anil", "azul", "verde", "amarelo", "laranja", "vermelho"));
         System.out.println(coresArcoIris3);
+
         List<String> coresArcoIrisList = new ArrayList<>(coresArcoIris3);
         Collections.reverse(coresArcoIrisList);
         System.out.println(coresArcoIrisList);
